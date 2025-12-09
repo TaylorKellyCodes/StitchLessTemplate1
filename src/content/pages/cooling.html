@@ -1,0 +1,134 @@
+---
+title: "Cooling | Wilson HVAC"
+description: "Meta description for the page"
+permalink: "/cooling/"
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | avif %}"/>
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 482, height: 536 }) | avif %}"/>
+    <link rel="stylesheet" href="/assets/css/cooling.css">
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+    <!--                   Banner                     -->
+    <!-- ============================================ -->
+
+    <div id="banner-310">
+        <div class="cs-container">
+            <span class="cs-int-title">Cooling</span>
+            <div class="cs-breadcrumbs">
+                <a href="/" class="cs-link">Home</a>
+                <a href="/about/" class="cs-link cs-active">Cooling</a>
+            </div>
+        </div>
+        <!--Background Image-->
+        <picture class="cs-background">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | jpeg %}" type="image/jpeg">
+            <!--Tablet Image-->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | webp %}" type="image/webp">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 942 }) | jpeg %}" type="image/jpeg">
+            <!--Desktop Image-->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | webp %}" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" type="image/jpeg">
+            <img src="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" alt="library" width="1920" height="482" loading="eager" decoding="async">
+        </picture>
+    </div>
+
+<!-- ============================================ -->
+<!--                  Services                    -->
+<!-- ============================================ -->
+
+<section id="services-1628">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-flex">
+                <span class="cs-topper">Cooling & Air Conditioning Services</span>
+                <h2 class="cs-title">Stay cool and comfortable all summer long.</h2>
+            </div>
+            <p class="cs-text">
+                When the heat is on, your air conditioning system needs to perform at its best. Our certified HVAC technicians provide fast, reliable, and honest cooling services designed to keep your home comfortable, energy-efficient, and safe. From quick repairs to full system replacements, we deliver high-quality workmanship and solutions that last.
+            </p>
+        </div>                  
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <picture class="cs-picture">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/ac2.jpg" | resize({ width: 413, height: 420 }) | avif %}">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/portfolio/ac2.jpg" | resize({ width: 413, height: 420 }) | avif %}">
+                        <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/portfolio/ac2.jpg" | resize({ width: 413, height: 420 }) | avif %}" alt="room" width="413" height="420">
+                    </picture>
+                    <h3 class="cs-h3">AC Repair & Troubleshooting</h3>
+                    <p class="cs-item-text">
+                        If your air conditioner isn’t cooling properly, making strange noises, or won’t turn on, we can help. Our experts quickly diagnose the problem and offer clear repair options to get your system back to peak performance.
+                    </p>
+                    <a href="/contact/" class="cs-button-solid">Get in Touch</a>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <picture class="cs-picture">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/ac3.jpg" | resize({ width: 413, height: 420 }) | avif %}">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/portfolio/ac3.jpg" | resize({ width: 413, height: 420 }) | avif %}">
+                        <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/portfolio/ac3.jpg" | resize({ width: 413, height: 420 }) | avif %}" alt="room" width="413" height="420">
+                    </picture>
+                    <h3 class="cs-h3">AC Installation & Replacement</h3>
+                    <p class="cs-item-text">
+                        When it’s time for a new air conditioner, we’ll help you select the perfect system for your home and budget. We install high-efficiency units that reduce energy costs and keep every room cool and comfortable.
+                    </p>
+                    <a href="/contact/" class="cs-button-solid">Get in Touch</a>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <picture class="cs-picture">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/ac4.jpg" | resize({ width: 413, height: 420 }) | avif %}">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/portfolio/ac4.jpg" | resize({ width: 413, height: 420 }) | avif %}">
+                        <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/portfolio/ac4.jpg" | resize({ width: 413, height: 420 }) | avif %}" alt="room" width="413" height="420">
+                    </picture>
+                    <h3 class="cs-h3">Ductless & Mini-Split Systems</h3>
+                    <p class="cs-item-text">
+                        Looking for flexible cooling solutions for specific rooms or additions? We specialize in ductless and mini-split system installation, maintenance, and repair to provide customized comfort wherever you need it.
+                    </p>
+                    <a href="/contact/" class="cs-button-solid">Get in Touch</a>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <picture class="cs-picture">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/ac1.jpg" | resize({ width: 413, height: 420 }) | avif %}">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/portfolio/ac1.jpg" | resize({ width: 413, height: 420 }) | avif %}">
+                        <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/portfolio/ac1.jpg" | resize({ width: 413, height: 420 }) | avif %}" alt="room" width="413" height="420">
+                    </picture>
+                    <h3 class="cs-h3">Cooling Maintenance & Tune-Ups</h3>
+                    <p class="cs-item-text">
+                        Keep your AC running efficiently and avoid unexpected breakdowns. Our seasonal maintenance services improve performance, extend equipment life, and ensure your home stays cool when you need it most.
+                    </p>
+                    <a href="/contact/" class="cs-button-solid">Get in Touch</a>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+                                
+
+    {% include 'sections/cta.html' %}
+
+{% endblock %}
